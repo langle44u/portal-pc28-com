@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://langle44u.github.io/portal-pc28-com/sitemap.xml

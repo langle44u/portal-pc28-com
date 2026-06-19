@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加拿大28 · 快速识别与使用指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f9f9f9;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', Helvetica, Arial, sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 2.4rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 720px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 3.6rem 2.8rem;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.02);
+            transition: box-shadow 0.25s;
+        }
+
+        @media (max-width: 580px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+            .page {
+                padding: 2.4rem 1.6rem;
+                border-radius: 20px;
+            }
+        }
+
+        /* 标题层级：清晰，留白驱动 */
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 550;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+            color: #101010;
+            line-height: 1.2;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #5f5f5f;
+            margin-top: -0.1rem;
+            margin-bottom: 2.2rem;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 1.6rem;
+        }
+
+        h2 {
+            font-size: 1.55rem;
+            font-weight: 520;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+            color: #121212;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: #2c2c2c;
+        }
+
+        a {
+            color: #1f4f8b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1.2px;
+            transition: color 0.2s, background 0.1s;
+        }
+
+        a:hover {
+            color: #0a2c4e;
+            background: #f1f6fe;
+            border-radius: 2px;
+        }
+
+        /* 卡片式亮点组 —— 极简留白，小圆角 */
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 2rem 0 1.2rem 0;
+        }
+
+        .highlight-item {
+            flex: 1 1 180px;
+            background: #f6f7f9;
+            border-radius: 18px;
+            padding: 1.2rem 1.3rem;
+            border: 1px solid #ededed;
+            transition: background 0.2s;
+        }
+
+        .highlight-item:hover {
+            background: #eef0f4;
+        }
+
+        .highlight-item strong {
+            display: block;
+            font-weight: 580;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: #0f0f0f;
+        }
+
+        .highlight-item span {
+            font-size: 0.95rem;
+            color: #404040;
+            line-height: 1.5;
+        }
+
+        /* 使用建议——干净列表 */
+        .suggest-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 1.2rem 0 1.8rem;
+        }
+
+        .suggest-list li {
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #efefef;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+        }
+
+        .suggest-list li:last-child {
+            border-bottom: none;
+        }
+
+        .suggest-list li::before {
+            content: "▹";
+            color: #3f6a9e;
+            font-weight: 500;
+        }
+
+        .faq-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.2rem;
+        }
+
+        .faq-item {
+            border-left: 3px solid #d8dee8;
+            padding-left: 1.2rem;
+        }
+
+        .faq-item .q {
+            font-weight: 550;
+            color: #121212;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item .a {
+            color: #3a3a3a;
+            font-size: 0.95rem;
+        }
+
+        .footnote {
+            margin-top: 2.6rem;
+            padding-top: 1.6rem;
+            border-top: 1px solid #e5e5e5;
+            font-size: 0.9rem;
+            color: #5d5d5d;
+            line-height: 1.6;
+        }
+
+        .footnote a {
+            color: #2f5585;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 2rem 0 0.5rem;
+        }
+
+        .hero-tag {
+            background: #f0f3f8;
+            display: inline-block;
+            padding: 0.3rem 0.9rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            color: #1f3b5c;
+            letter-spacing: 0.3px;
+            margin-bottom: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- hero 区域 · 简明识别 -->
+    <div class="hero-tag">📍 产品定位 · 快速识别</div>
+    <h1>加拿大28 · 从用途认识界面</h1>
+    <div class="subhead">一个围绕「加拿大28」规则构建的专注型工具站 — 当你第一次打开它，你首先需要确认的是：它是什么、能做什么、该怎么用。</div>
+
+    <!-- 摘要：一句话+自然嵌入链接 -->
+    <p>
+        如果你是刚接触「加拿大28」的新手，或者只是希望找一个清晰、无干扰的环境来跟踪走势或进行参考，<a href="https://portal-pc28.com">加拿大28</a> 聚合了与这一数字游戏相关的基础工具和信息结构。它并非游戏平台，而是一个面向查询、记录与辅助判断的轻量化站点。
+    </p>
+    <p>
+        页面去除了无关广告和复杂跳转，核心逻辑围绕加拿大28的常见参数：号码范围、奇偶、大小、组合形态等，你可以快速定位到感兴趣的数据视图。
+    </p>
+
+    <!-- 亮点 · 卡片式 -->
+    <h2>▸ 界面亮点</h2>
+    <div class="highlights">
+        <div class="highlight-item">
+            <strong>📊 结构化数据</strong>
+            <span>按周期、形态、频率整理，省去自己手动统计的麻烦。</span>
+        </div>
+        <div class="highlight-item">
+            <strong>🧩 筛选即所得</strong>
+            <span>通过简单的筛选切换，就能对照不同区间的号码分布。</span>
+        </div>
+        <div class="highlight-item">
+            <strong>⚡ 轻响应</strong>
+            <span>移动端和桌面端布局统一，加载快，没有冗余弹窗。</span>
+        </div>
+    </div>
+
+    <!-- 使用建议 · 偏知识型 -->
+    <h2>▸ 建议这样使用</h2>
+    <ul class="suggest-list">
+        <li><strong>先看周期概览：</strong>页面默认呈现最近若干期的结果序列，适合快速建立对近期走势的直观印象。</li>
+        <li><strong>对比奇偶与大小：</strong>利用内置的统计模块（通常位于中部区域），观察不同属性的出现频率，辅助形成个人判断逻辑。</li>
+        <li><strong>结合个人记录：</strong>建议将网站数据作为参考维度之一，配合自己的笔记或历史数据对照分析。</li>
+        <li><strong>注意信息滞后：</strong>所有数据更新存在正常延迟，请以实际公布为准，不宜作为瞬时决策唯一依据。</li>
+    </ul>
+
+    <!-- 更具体的场景· 自然带出链接 -->
+    <h3>▸ 典型使用场景</h3>
+    <p>
+        假设你正在回顾过去几十期的号码走向，并想快速查看某个数值区间的出现次数。<a href="https://portal-pc28.com">加拿大28</a> 的筛选面板允许你按号码段、奇偶、大小等条件过滤，结果以列表和简易图表同步展示，减少来回切换标签页的麻烦。对于需要批量浏览的用户，页面还支持按日期或期号排序。
+    </p>
+    <p>
+        另外，如果你习惯在多个设备上使用，响应式布局让手机横竖屏都能保持可读性，关键操作按钮的位置不会因屏幕变小而消失。
+    </p>
+
+    <!-- FAQ 摘要 · 克制可信 -->
+    <h2>▸ 常见认知点摘要</h2>
+    <div class="faq-grid">
+        <div class="faq-item">
+            <div class="q">Q：这个网站是官方开奖渠道吗？</div>
+            <div class="a">不是。本网站属于第三方信息整理与参考工具，数据来源为公开接口，仅供个人学习与交流使用。请勿将其等同于任何官方平台。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">Q：我是否需要注册或付费？</div>
+            <div class="a">目前不需要。网站提供的基础数据浏览和筛选功能均免费开放，也没有强制注册流程。但未来若有功能调整，以页面实际说明为准。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">Q：数据多久更新一次？</div>
+            <div class="a">通常接近实时，但受限于第三方源刷新频率，偶尔存在数分钟延迟。如发现长时间未更新，建议稍后刷新页面。</div>
+        </div>
+    </div>
+
+    <!-- 小提示：可读性与可信约束 -->
+    <hr>
+    <p style="font-size: 0.95rem; color: #4d4d4d; margin-top: 0.8rem;">
+        <strong>📌 提示：</strong>任何数字游戏都具有随机性，历史数据不能保证未来结果。请保持理性，合理分配精力与时间。
+    </p>
+
+    <!-- 尾部 · 再次自然包含链接 -->
+    <div class="footnote">
+        <p>如果你希望进一步了解界面布局或确认当前工具是否适合你的习惯，可以直接打开 <a href="https://portal-pc28.com">加拿大28</a> 浏览核心模块。整体设计力求信息直接，减少认知负担。</p>
+        <p style="margin-top: 0.5rem; opacity: 0.7;">本页面仅为产品功能说明，不构成任何投资或参与建议。</p>
+    </div>
+</div>
+</body>
+</html>
